@@ -74,6 +74,7 @@ graficos_supuestos <- function(model) {
   qqnorm(resid(model), main = "Normal Q-Q",
        xlab = "Theoretical Quantiles", ylab = "Standarized residuals")
   qqline(resid(model), col = "red", lwd = 2)
+  par(mfrow = c(1, 1))
 }
 
 # Datos iniciales originales

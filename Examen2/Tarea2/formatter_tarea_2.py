@@ -1,5 +1,5 @@
 input_filepath = "Datos_tarea_2.txt"
-output_filepath = "Datos_fixed_tarea_2.csv"
+output_filepath = "Datos_fixed_tarea_2_fix.csv"
 
 header = "Tiempo;Objetos;Arquitectura;Efectos;Resolucion"
 
@@ -28,9 +28,9 @@ with open(input_filepath, 'r') as f:
             num_objects = num_objects[:-3]
             resolution = resolution[:-4]
 
-            anti = "NA" if efects[0] == "0" else "AA"
-            transp = "NA" if efects[1] == "0" else "TR"
-            reflex = "NA" if efects[2] == "0" else "RE"
+            anti = "XX" if efects[0] == "0" else "AA"
+            transp = "XX" if efects[1] == "0" else "TR"
+            reflex = "XX" if efects[2] == "0" else "RE"
 
             efects = f"{anti}-{transp}-{reflex}"
 
