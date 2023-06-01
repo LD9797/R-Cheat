@@ -386,7 +386,7 @@ library(lsmeans)
 marginal <- lsmeans(model, pairwise ~ Algoritmo, adjust="tukey")
 
 library(multcomp)
-CLD <- cld(marginal, alpha = 0.05, Letters = letters, adjunst = "tukey")
+CLD <- cld(marginal, alpha = 0.05, Letters = letters, adjust = "tukey")
 CLD
 
 # 12. Analisis post-hoc por entrenamiento

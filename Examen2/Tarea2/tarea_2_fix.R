@@ -65,18 +65,6 @@ interaction.plot(x.factor = Data$Efectos,
  pch = c(19,17,15),
  fixed = TRUE,
  leg.bty = "o")
-
-# Variable dependiente: Tiempo
-# Variables independientes: Arquitectura y Efectos
-interaction.plot(x.factor = Data$Efectos,
- trace.factor = Data$Arquitectura,
- response = Data$Tiempo,
- fun = mean,
- type = "b",
- col = c("black", "red", "green"),
- pch = c(19,17,15),
- fixed = TRUE,
- leg.bty = "o")
 # Si hay interacción significativa entre objetos y efectos, los objetos
 # impactan en cómo se comportan los efectos.
 

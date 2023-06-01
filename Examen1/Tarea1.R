@@ -8,7 +8,7 @@ library(rcompanion)
 library(ggplot2)
 
 # Lectura de datos
-Data <- read.csv("Datos tarea 1.csv")
+Data <- read.csv("C:\\Users\\user\\PycharmProjects\\RCheatSheet\\Examen1\\Datos tarea 1.csv")
 
 # Sumario
 summ <- Summarize(Stpbnd.2400.2482..S21..1. ~ Lot, data=Data, digits = 2)
